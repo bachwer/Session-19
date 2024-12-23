@@ -16,11 +16,11 @@ int main(void){
     if (studen == NULL) {
         return 0;
     }
-    strcpy(studen[0].name, "Nguyen van A"); studen[0].id = 18; strcpy(studen[0].phone, "84+ 123 321 534");
-    strcpy(studen[1].name, "Nguyen van B"); studen[1].id = 19; strcpy(studen[1].phone, "84+ 865 767 534");
-    strcpy(studen[2].name, "Nguyen van C"); studen[2].id = 20; strcpy(studen[2].phone, "84+ 435 322 456");
-    strcpy(studen[3].name, "Nguyen van D"); studen[3].id = 22; strcpy(studen[3].phone, "84+ 657 321 089");
-    strcpy(studen[4].name, "Nguyen van E"); studen[4].id = 19; strcpy(studen[4].phone, "84+ 435 321 767");
+    strcpy(studen[0].name, "Nguyen van A"); studen[0].age = 18; strcpy(studen[0].phone, "84+ 123 321 534");
+    strcpy(studen[1].name, "Nguyen van B"); studen[1].age = 19; strcpy(studen[1].phone, "84+ 865 767 534");
+    strcpy(studen[2].name, "Nguyen van C"); studen[2].age = 20; strcpy(studen[2].phone, "84+ 435 322 456");
+    strcpy(studen[3].name, "Nguyen van D"); studen[3].age = 22; strcpy(studen[3].phone, "84+ 657 321 089");
+    strcpy(studen[4].name, "Nguyen van E"); studen[4].age = 19; strcpy(studen[4].phone, "84+ 435 321 767");
     int i = 0;
     int pos;
     while(studen[i].name[0] != '\0') {
@@ -62,7 +62,7 @@ void infPrint(struct information studen[]) {
         printf("___________________________________________________\n");
         printf("ID: %d\t|", studen[i].id);
         printf("Name: %s\t|", studen[i].name);
-        printf("ID: %d\t|", studen[i].age);
+        printf("Age: %d\t|", studen[i].age);
         printf("Phone: %s\t|\n", studen[i].phone);
         i++;
     }
